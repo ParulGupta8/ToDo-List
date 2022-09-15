@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link href="ToDoList.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- google fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h2>ToDo List</h2>
+    <div class="container">
+        <form onsubmit="addtodo(event)">
+
+        <div class="input_parent">
+            <input class="input" id="input_parent" type="text" placeholder="Write todos here" style="width: 50%;">
+            <input class="input" id="date" type="date" placeholder="Deadline" value="">
+            <button type="submit" class="add"  id="add">+</button>
+        </div>
+    </form>
+        <div class="content" id="content">
+            <!-- <p class="para-style"">${input.value}</p>   This is done by JS-->
+        </div>
+    </div>
+    <p>Double click the todo to delete. Single click to cut it.<span style="color: red;"> Deadline in red.</span></p>
+    
+
+    <script src="ToDoList.js"></script>
+</body>
+
+</html>
